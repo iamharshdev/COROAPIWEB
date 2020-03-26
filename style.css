@@ -1,0 +1,221 @@
+@font-face {
+    font-family: GrotekMed;
+    src: url("../fonts/HKGroteskPro-Medium.woff2") format("opentype");
+}
+
+@font-face {
+    font-family: GrotekBold;
+    src: url("../fonts/Graphik-Bold.woff2") format("opentype");
+}
+
+.jscode{
+   max-width:100%;
+}
+
+.jsoncode{
+  max-width:100%;
+}
+
+.header{
+  margin-top: 5rem;
+}
+
+.textsection{
+  margin-top:3rem;font-family: GrotekMed;
+}
+.heading{
+  margin-bottom: 1.5rem; font-family: GrotekBold;
+}
+.textpara{
+  margin-bottom:1.5rem;
+}
+.main-btn{
+    border:none;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    font-family: GrotekBold;
+    color: #fff;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    background-color: #000;
+}
+.main-btn:hover{
+    color: #000;
+    background-color: #fff;
+    border:2px solid #000;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+
+.features_area {
+    padding-bottom:2rem;
+    padding-top: 2rem;
+    margin-top: 3rem;
+    font-family: GrotekMed;
+ }
+
+ .features_area a:hover{
+     text-decoration:none;
+ }
+
+
+ .features-heading{
+    font-size: 2rem;
+    font-family: GrotekBold;
+    text-align: center;
+    text-decoration-color:#fff;
+    padding-bottom: 4rem;
+}
+
+  .feature_item
+  {
+    padding: 45px 25px;
+    cursor: pointer;
+    color: black;
+    margin-bottom: 30px;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    border: 2px solid black;
+    border-radius:5px ;
+  }
+
+    .feature_item img
+    {
+      margin-bottom: 35px;
+    }
+
+    .feature_item h4
+    {
+      font-size: 20px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      font-family: GrotekBold;
+      color: #000;
+    }
+
+    .feature_item p
+     {
+      margin-bottom: 0px;
+      color: #000;
+     }
+
+.heading-section{
+text-align: center;
+margin: 0 auto;
+  font-family: GrotekBold;
+  margin-bottom: 2rem;
+}
+
+.just-random-section{
+    margin-top:0rem;
+    padding-top: 3rem;
+    padding-bottom:3rem;
+
+}
+.heading-random-section {
+  font-family: GrotekBold;
+}
+
+p{
+  font-family: GrotekMed;
+}
+
+i{
+  color: black;
+}
+
+.footer{
+  padding: 3rem;
+  margin: 5rem;
+  border-radius: 1rem;
+  background: black;
+  color:white;
+}
+.white{
+background: white;
+color: black;
+}
+
+.white:focus{
+background: black;
+color: white;
+border: 2px solid white;
+}
+
+.white:hover{
+background: black;
+color: white;
+border: 2px solid white;
+}
+
+.madeby{
+text-align: center;
+font-family: GrotekBold;
+margin-top: 2rem;
+}
+
+#api-card{
+  visibility: hidden; /* Hidden by default. Visible on click */
+  min-width: 250px; /* Set a default minimum width */
+  margin-left: -125px; /* Divide value of min-width by 2 */
+  background-color: #000; /* Black background color */
+  color: #fff; /* White text color */
+  text-align: center; /* Centered text */
+  border-radius: 2px; /* Rounded borders */
+  padding: 16px; /* Padding */
+  position: fixed; /* Sit on top of the screen */
+  z-index: 1; /* Add a z-index if needed */
+  left: 50%; /* Center the snackbar */
+  bottom: 30px; /* 30px from the bottom */
+  border-radius: 5px;
+}
+
+.api-card{
+  min-width: 250px; /* Set a default minimum width */
+  margin: 0 auto;
+  margin-top:3rem; 
+  background-color: #000; /* Black background color */
+  color: #fff; /* White text color */
+  text-align: center; /* Centered text */
+  padding: 16px; /* Padding */
+  border-radius: 5px;
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#api-card.show {
+  visibility: visible; /* Show the snackbar */
+  /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+  However, delay the fade out process for 2.5 seconds */
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
