@@ -182,12 +182,16 @@ margin-top: 2rem;
 .api-card{
   min-width: 250px; /* Set a default minimum width */
   margin: 0 auto;
-  margin-top:3rem; 
+  margin-top:3rem;
   background-color: #000; /* Black background color */
   color: #fff; /* White text color */
   text-align: center; /* Centered text */
   padding: 16px; /* Padding */
   border-radius: 5px;
+}
+
+.textsectionmore{
+  margin-top:5rem;
 }
 
 /* Show the snackbar when clicking on a button (class added with JavaScript) */
@@ -218,4 +222,36 @@ margin-top: 2rem;
 @keyframes fadeout {
   from {bottom: 30px; opacity: 1;}
   to {bottom: 0; opacity: 0;}
+}
+
+@media (max-width: 769px) {
+  .header{
+    margin-top: 2rem;
+  }
+
+  .textsection{
+    margin: 1rem;
+  }
+
+  .heading{
+    font-size: 2rem;
+  }
+
+  .features_area{
+        margin: 1rem;
+  }
+
+  .textsectionmore{
+    margin: 1rem;
+    margin-top: 1rem;
+  }
+  .footer{
+    margin: 1rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .madeby{
+    font-size: 1.5rem;
+  }
 }
