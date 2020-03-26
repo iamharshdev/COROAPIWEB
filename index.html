@@ -114,7 +114,27 @@
             <div class="col-12 col-md-6" style="margin-left:3rem;margin-top:3rem;">
                 <h1 class="heading-random-section wow bounceInLeft">Python.</h1>
                 <p style="margin-top: 1rem;" class="para-random-section wow bounceInLeft">This API response data in form of JSON. You can use JSON python library to get data out of this API and then you can use a for loop to get all the news article just like shown in the images. </p>
-                <button type="button" onclick="copyToClipboard('#apitext')" class="btn main-btn wow rubberBand">Get API</button>
+                <button type="button" onclick="copyToClipboard('#js-starter')" class="btn main-btn wow rubberBand">Get API</button>
+                 <div id='js-starter'>
+//USING JQUERY
+
+$(document).ready(function() { $.getJSON("https://cryptic-ravine-96718.herokuapp.com/", null, function(data) {
+
+  //Loop to read all the articles one by one
+   for(i=0; i<data.news.length-1;i++){
+// to get the title of article 
+var title=data.news[i].title;
+
+//to get the image of article 
+var img=data.news[i].img;
+
+//to get the link of article 
+var href=data.news[i].link;
+   }
+}
+)
+})
+                 </div>
             </div>
             <div class="col-12 col-md-6 wow bounceInLeft" style="margin-top:0rem;">
                 <img class="fit-section" src="img/img2.svg" alt="">
