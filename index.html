@@ -102,8 +102,8 @@
             <div class="col-12 col-md-6 textsectionmore" style="">
                 <h1 class="heading-random-section wow bounceInRight">JavaScript.</h1>
                 <p style="margin-top: 1rem;" class="para-random-section wow bounceInRight">This API response data in form of JSON. You can use JQUERY to get data out of this API and then you can use a for loop to get all the news article just like shown in the images. </p>
-                <button type="button" onclick="copyToClipboard('#js-starter')" class="btn main-btn wow rubberBand">Get API</button>
-            <div id='js-starter'>
+                <button type="button" onclick="jscode()" class="btn main-btn wow rubberBand">Get API</button>
+            <textarea id='js-starter'>
 //USING JQUERY
 
 $(document).ready(function() { $.getJSON("https://cryptic-ravine-96718.herokuapp.com/", null, function(data) {
@@ -122,7 +122,7 @@ var href=data.news[i].link;
 }
 )
 })
-                 </div>
+                 </textarea>
 </div>
         </div>
     </div>
@@ -163,6 +163,7 @@ var href=data.news[i].link;
         </div>
     </div>
 </div> -->
+
 <h1 class="heading-section wow bounceInLeft" style="margin-bottom:2rem;">Real Project Builds</h1>
   <div class="example" style="margin-top:3rem;">
     <div class="container">
@@ -227,6 +228,12 @@ var href=data.news[i].link;
                 x.className = "show";
                 // After 3 seconds, remove the show class from DIV
                 setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+              }
+
+              function jscode(){
+              var copyText = document.getElementById("js-starter");
+              copyText.select();
+              document.execCommand("Copy");
               }
 
 
