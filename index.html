@@ -234,8 +234,13 @@ var href=data.news[i].link;
               var copyText = document.getElementById("js-starter");
               copyText.select();
               document.execCommand("Copy");
-              }
 
+var x = document.getElementById("api-card");
+                // Add the "show" class to DIV
+                x.className = "show";
+                // After 3 seconds, remove the show class from DIV
+                setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+            }
 
             </script>
 
