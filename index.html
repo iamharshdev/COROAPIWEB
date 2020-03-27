@@ -91,42 +91,27 @@
             </div>
           </section>
 
-    <div class="just-random-section">
-    <div class="container">
-      <h1 class="heading-section wow bounceInRight">How to use</h1>
-        <div class="row">
-          <div class="col-12 col-md-6" style="text-align: right;">
-              <img class="fit-section wow bounceInLeft" style="max-width:100%;" src="js.png" alt="">
-          </div>
+          <div class="just-random-section wow bounceInRight">
+          <div class="container">
+            <h1 class="heading-section">How to use</h1>
+              <div class="row">
+                <div class="col-12 col-md-6 jscodecarbon">
+                    <!-- <img class="fit-section wow bounceInLeft" style="max-width:100%;" src="js.png" alt=""> -->
+                    <iframe
+                      src="https://carbon.now.sh/embed?bg=rgba(255%2C255%2C255%2C0)&t=verminal&wt=bw&l=auto&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira%20Code&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%252F%252FUSING%2520JQUERY%250A%2524(document).ready(function()%2520%257B%2520%250A%2520%2520%2524.getJSON(%2522https%253A%252F%252Fcryptic-ravine-96718.herokuapp.com%252F%2522%252C%250A%2520%2520null%252C%2520function(data)%2520%257B%250A%2520%2520%2520%2520%250A%2509%252F%252F%2520Loop%2520to%2520read%2520all%2520the%2520articles%2520one%2520by%2520one%250A%2520%2520%2520for(i%253D0%253B%2520i%253Cdata.news.length-1%253Bi%252B%252B)%257B%250A%2509%252F%252F%2520to%2520get%2520the%2520title%2520of%2520article%250A%2520%2520%2520var%2520title%253Ddata.news%255Bi%255D.title%253B%250A%250A%2520%2520%2520%252F%252F%2520to%2520get%2520the%2520image%2520of%2520article%250A%2520%2520%2520var%2520img%253Ddata.news%255Bi%255D.img%253B%250A%250A%2520%2520%2520%252F%252Fto%2520get%2520the%2520link%2520of%2520article%250A%2520%2520%2520var%2520href%253Ddata.news%255Bi%255D.link%253B%250A%2520%2520%2520%2520%2520%250A%2520%2520%2520%252F%252Fto%2520get%2520the%2520indian%2520COVID-19%2520stats%250A%2520%2520%2520var%2520statsactive%253Ddata.stats.active%253B%250A%2520%2520%2520var%2520statscured%253Ddata.stats.cured%253B%250A%2520%2520%2520var%2520statstotal%253Ddata.stats.total%253B%250A%2520%2520%2520var%2520statsdeath%253Ddata.stats.deaths%253B%2520%2520%250A%2520%2520%2520%250A%2520%2520%2520%257D%250A%2520%2520%257D%250A%2520)%250A%257D)"
+                      style="transform:scale(1);height:50vh;border:0; overflow:scroll;"
+                      sandbox="allow-scripts allow-same-origin" class="js-code">
+                    </iframe>
+                </div>
 
-            <div class="col-12 col-md-6 textsectionmore" style="">
-                <h1 class="heading-random-section wow bounceInRight">JavaScript.</h1>
-                <p style="margin-top: 1rem;" class="para-random-section wow bounceInRight">This API response data in form of JSON. You can use JQUERY to get data out of this API and then you can use a for loop to get all the news article just like shown in the images. </p>
-                <button type="button" onclick="jscode()" class="btn main-btn wow rubberBand">Get API</button>
-            <textarea id='js-starter'>
-//USING JQUERY
-
-$(document).ready(function() { $.getJSON("https://cryptic-ravine-96718.herokuapp.com/", null, function(data) {
-
-  //Loop to read all the articles one by one
-   for(i=0; i<data.news.length-1;i++){
-// to get the title of article 
-var title=data.news[i].title;
-
-//to get the image of article 
-var img=data.news[i].img;
-
-//to get the link of article 
-var href=data.news[i].link;
-   }
-}
-)
-})
-                 </textarea>
-</div>
-        </div>
-    </div>
-</div>
+                  <div class="col-12 col-md-6 textsectionmore" style="">
+                      <h1 class="heading-random-section">JavaScript.</h1>
+                      <p style="margin-top: 1rem;" class="para-random-section">This API response data in form of JSON. You can use JQUERY to get data out of this API and then you can use a for loop to get all the news article just like shown in the images. </p>
+                      <button type="button" onclick="copyToClipboard(#apitext)" class="btn main-btn wow rubberBand">Get API</button>
+                  </div>
+                  </div>
+            </div>
+            </div>
 <!--
 <div class="just-random-section"  style="background-color: #F4F0FB; padding-bottom: 5rem;">
     <div class="container">
@@ -142,13 +127,13 @@ $(document).ready(function() { $.getJSON("https://cryptic-ravine-96718.herokuapp
 
   //Loop to read all the articles one by one
    for(i=0; i<data.news.length-1;i++){
-// to get the title of article 
+// to get the title of article
 var title=data.news[i].title;
 
-//to get the image of article 
+//to get the image of article
 var img=data.news[i].img;
 
-//to get the link of article 
+//to get the link of article
 var href=data.news[i].link;
    }
 }
@@ -229,18 +214,6 @@ var href=data.news[i].link;
                 // After 3 seconds, remove the show class from DIV
                 setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
               }
-
-              function jscode(){
-              var copyText = document.getElementById("js-starter");
-              copyText.select();
-              document.execCommand("Copy");
-
-var x = document.getElementById("api-card");
-                // Add the "show" class to DIV
-                x.className = "show";
-                // After 3 seconds, remove the show class from DIV
-                setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
-            }
 
             </script>
 

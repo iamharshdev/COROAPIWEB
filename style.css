@@ -9,7 +9,6 @@
 }
 
 .jscode{
-   max-width:100%;
 }
 
 .jsoncode{
@@ -191,7 +190,7 @@ margin-top: 2rem;
 }
 
 .textsectionmore{
-  margin-top:5rem;
+  margin-top:2rem;
 }
 
 /* Show the snackbar when clicking on a button (class added with JavaScript) */
@@ -224,6 +223,11 @@ margin-top: 2rem;
   to {bottom: 0; opacity: 0;}
 }
 
+
+.jscodecarbon{
+  padding-left: 5rem;
+}
+
 @media (max-width: 769px) {
   .header{
     margin-top: 2rem;
@@ -254,8 +258,12 @@ margin-top: 2rem;
   .madeby{
     font-size: 1.5rem;
   }
+  .jscodecarbon{
+    padding-left: 0rem;text-align: center;
+  }
 }
+
 
 .api-card{display:none;}
 
-#js-starter{display:none;}
+#js-starter{visibility: hidden;}
